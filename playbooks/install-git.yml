@@ -1,0 +1,9 @@
+---
+- name: Instalar Git
+  hosts: all
+  become: true
+  tasks:
+    - name: Instalar Git
+      package:
+        name: git
+        state: present

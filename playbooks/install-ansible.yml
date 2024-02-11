@@ -1,0 +1,17 @@
+---
+- name: Install Ansible
+  hosts: ec2_instances
+  become: true
+  remote_user: ubuntu
+
+  tasks:
+    - name: Update apt package cache
+      become: true
+      apt:
+        update_cache: yes
+
+    - name: Install Ansible
+      become: true
+      apt:
+        name: ansible
+        state: present

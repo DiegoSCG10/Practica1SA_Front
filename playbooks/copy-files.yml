@@ -1,0 +1,12 @@
+---
+- name: Copiar archivo localmente
+  hosts: localhost
+  tasks:
+    - name: Copiar archivo
+      copy:
+        src: /home/ubuntu/Practica1SA_Front/dist
+        dest: /var/www/
+    - name: Copiar default file
+      copy:
+        src: /home/ubuntu/Practica1SA_Front/default
+        dest: /etc/nginx/sites-enabled/
