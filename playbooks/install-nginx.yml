@@ -1,6 +1,6 @@
 ---
 - name: Install Nginx
-  hosts: ec2_instances
+  hosts: localhost
   become: true
   remote_user: ubuntu
 

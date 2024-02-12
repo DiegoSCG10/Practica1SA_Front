@@ -1,6 +1,6 @@
 ---
 - name: Instalar Git
-  hosts: all
+  hosts: localhost
   become: true
   tasks:
     - name: Instalar Git
